@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>下拉列表框</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/font/iconfont.css" />
+  <link rel="stylesheet" href="css/dropDownList.css" />
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/dropDownList.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.templist').dropdownlist({
+        defaultText: "请选择国家",
+        selectIds: "",
+        callback: function (res) {
+          $(".p1").empty().html(JSON.stringify(res));
+        }
+      });
+      $('.templist1').dropdownlist({
+        defaultText: "请选择国家",
+        selectIds: "10,20",//默认选中国家
+        callback: function (res) {
+          $(".p2").empty().html(JSON.stringify(res));
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="templist">
+
+  </div>
+
+  <p class="p1"></p>
+  <div class="templist1">
+
+  </div>
+  <p class="p2"></p>
+</body>
+
+</html>

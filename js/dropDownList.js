@@ -2,7 +2,7 @@
  * dorpDownList.js 1.0
  * @version 1.0
  * @author zhuzhida
- * @url https://gitee.com/richard1015/dropDownList
+ * @url https://github.com/richard1015/dropDownList
  *
  * @调用方法
  * $(selector).dropdownlist(option);
